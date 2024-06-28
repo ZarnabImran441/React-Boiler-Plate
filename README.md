@@ -1,4 +1,4 @@
-## LOAM
+## React Boiler Plate
 
 This is a simple React application for Incentive Database
 
