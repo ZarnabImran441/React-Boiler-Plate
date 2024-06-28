@@ -1,0 +1,12 @@
+{
+    "compilerOptions": {
+        "composite": true,
+        "strict": true,
+        "forceConsistentCasingInFileNames": true,
+        "module": "ESNext",
+        "moduleResolution": "Node",
+        "allowSyntheticDefaultImports": true,
+        "resolveJsonModule": true
+    },
+    "include": ["vite.config.lib.mts", "vite.config.app.mts", "package.json"]
+}

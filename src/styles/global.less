@@ -1,0 +1,48 @@
+@import '@/styles/mixins';
+
+html,
+body,
+#root {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+}
+
+*[draggable^='true'] {
+    cursor: grab;
+}
+.height-preserving-container:empty {
+    min-height: var(--child-height);
+    box-sizing: border-box;
+}
+.infinite-scroll-component {
+    overflow: initial !important;
+    .scrollBar;
+}
+.toastClassName {
+    box-shadow: 0 2px 15px 0 rgba(28, 34, 43, 0.3);
+    border-radius: 6px;
+    background-color: white;
+    padding: 16px;
+}
+.bodyClassName {
+    line-height: initial;
+    color: black;
+}

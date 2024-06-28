@@ -1,0 +1,47 @@
+.textOverflow {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.scrollBar {
+    scrollbar-color: #afafaf;
+    &::-webkit-scrollbar {
+        height: 4px;
+        width: 4px;
+        display: block;
+        border-radius: 2px;
+    }
+
+    &::-webkit-scrollbar-track {
+        border-radius: 2px;
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background: #afafaf;
+        border-radius: 2px;
+        display: block;
+    }
+
+    &::-webkit-scrollbar-thumb:hover {
+        cursor: pointer;
+    }
+}
+.noScrollBar {
+    scrollbar-color: transparent;
+    &::-webkit-scrollbar {
+        height: 0;
+        width: 0;
+        display: none;
+    }
+    &::-webkit-scrollbar-track {
+        display: none;
+    }
+    &::-webkit-scrollbar-thumb {
+        background: transparent;
+        display: none;
+    }
+    &::-webkit-scrollbar-thumb:hover {
+        display: none;
+        background: transparent;
+    }
+}
